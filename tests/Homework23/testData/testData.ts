@@ -20,7 +20,7 @@ export const validTestData = [
     name: "Ana",
     lastName: "Pas",
     email: "pasichnyk.nas23+" + Math.floor(Math.random() * 200) + "@gmail.com",
-    password: "ABCabc!+89",
+    password: "ABCabc!+89"+Math.floor(Math.random() * 200),
     reEnterPassword: "ABCabc!+89",
   },
 ];
