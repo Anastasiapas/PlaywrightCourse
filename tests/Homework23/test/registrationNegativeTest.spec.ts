@@ -1,21 +1,13 @@
 import { chromium, expect, test } from "@playwright/test";
-import { RegistrationPage } from "./RegistrationPage";
-import { wrongTestData, wrongLengthTestData, validTestData } from "./testData";
+import { RegistrationPage } from "../pages/RegistrationPage";
+import { wrongTestData, wrongLengthTestData, validTestData } from "../testData/testData";
 
 let registrationPage: RegistrationPage;
 let page: any;
 
-test.beforeEach(async () => {
-  const browser = await chromium.launch();
-  const context = await browser.newContext({
-    httpCredentials: {
-      username: "guest",
-      password: "welcome2qauto",
-    },
-  });
-  page = await context.newPage();
-  await page.goto("https://qauto.forstudy.space/");
+test.beforeEach(async ({ page }) => {
   registrationPage = new RegistrationPage(page);
+  await page.goto('/');
   await registrationPage.clickOnElement("signUpBtn");
 });
 
@@ -163,8 +155,4 @@ test.describe("Field ' Re-enter Password'", () => {
       "Passwords do not match"
     );
   });
-});
-
-test.afterAll(async () => {
-  await page.context().browser().close();
 });
