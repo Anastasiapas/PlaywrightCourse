@@ -9,4 +9,6 @@ test.describe("Verify user can be registered", async () => {
     await garagePage.addCar(mileage);
     await expect(garagePage.elements.get("carsList")).toBeVisible();
   });
+
+
 });

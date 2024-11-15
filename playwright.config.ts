@@ -53,7 +53,7 @@ export default defineConfig({
     {
       name: 'setup',
       use: { ...devices['Desktop Chrome'] },
-      testMatch: '*setup/*.ts'
+      testMatch: '*setup/*task2.spec.ts'
     },
     // {
     //   name: 'firefox',

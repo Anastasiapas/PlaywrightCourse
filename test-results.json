@@ -1,0 +1,830 @@
+{
+  "config": {
+    "configFile": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/playwright.config.ts",
+    "rootDir": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "*setup/*task2.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-11-15T05:51:29.919Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 1156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-11-15T05:51:29.913Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Homework23/test/registrationNegativeTest.spec.ts",
+      "file": "Homework23/test/registrationNegativeTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Field 'Name'",
+          "file": "Homework23/test/registrationNegativeTest.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify error message for the 'Name' field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "interrupted",
+                      "duration": 3769,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-15T05:51:29.928Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results/Homework23-test-registrati-1f5e1--message-for-the-Name-field-chromium/test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-6fcdfc63dd546f7ebd48",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "Field 'Name': verify wrong data error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "interrupted",
+                      "duration": 3774,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-15T05:51:29.921Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results/Homework23-test-registrati-58286-fy-wrong-data-error-message-chromium/test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-982570af9e919d9bd051",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Field 'Name': verify wrong length error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "interrupted",
+                      "duration": 1769,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n    at /Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts:10:14",
+                        "location": {
+                          "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                          "column": 14,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m   registrationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegistrationPage\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m registrationPage\u001b[33m.\u001b[39mclickOnElement(\u001b[32m\"signUpBtn\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                            "column": 14,
+                            "line": 10
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m   registrationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegistrationPage\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m registrationPage\u001b[33m.\u001b[39mclickOnElement(\u001b[32m\"signUpBtn\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts:10:14\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-15T05:51:35.332Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results/Homework23-test-registrati-1bc37--wrong-length-error-message-chromium/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                        "column": 14,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-85ecaa0edac5787d72d4",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "Field 'Name': verify border on error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "interrupted",
+                      "duration": 1766,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n    at /Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts:10:14",
+                        "location": {
+                          "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                          "column": 14,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m   registrationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegistrationPage\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m registrationPage\u001b[33m.\u001b[39mclickOnElement(\u001b[32m\"signUpBtn\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                            "column": 14,
+                            "line": 10
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://qauto.forstudy.space/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  8 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m   registrationPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mRegistrationPage\u001b[39m(page)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m registrationPage\u001b[33m.\u001b[39mclickOnElement(\u001b[32m\"signUpBtn\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts:10:14\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-15T05:51:35.437Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/test-results/Homework23-test-registrati-b6a82-Name-verify-border-on-error-chromium/test-failed-1.png"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/anastasiiapasichnyk/IdeaProjects/PlaywrightCourse/tests/Homework23/test/registrationNegativeTest.spec.ts",
+                        "column": 14,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-324bbd30b37eca16c599",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 37,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Field 'Last Name'",
+          "file": "Homework23/test/registrationNegativeTest.spec.ts",
+          "line": 47,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify error message for the 'Last Name' field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-540794f5b679bbb2f7bd",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "Field 'Last Name': verify wrong data error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-51fef904ed2c2c2dd03f",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "Field 'Last Name': verify wrong length error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-a9112553cb08c6bfc9e5",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 63,
+              "column": 7
+            },
+            {
+              "title": "Field 'Last Name': verify border on error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-191ad68c8b57f9393d1a",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 73,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Field 'Email'",
+          "file": "Homework23/test/registrationNegativeTest.spec.ts",
+          "line": 83,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify error message for the 'Email' field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-3460444f939cbd9df604",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 84,
+              "column": 7
+            },
+            {
+              "title": "Field 'Email': verify wrong data error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-cc80f923bf89b29b6364",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 92,
+              "column": 7
+            },
+            {
+              "title": "Field 'Email': verify border on error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-58da8db1ea4d80b8313a",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 99,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Field 'Password'",
+          "file": "Homework23/test/registrationNegativeTest.spec.ts",
+          "line": 109,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Field 'Password': verify error message for the 'Password' field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-7dae4684c166d7f468ca",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 110,
+              "column": 7
+            },
+            {
+              "title": "Field 'Password': verify wrong data error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-b27f86ab9bac7dfdfeee",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 118,
+              "column": 7
+            },
+            {
+              "title": "Field 'Password': verify border on error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-f18cb045b02f1daa46c4",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 125,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Field ' Re-enter Password'",
+          "file": "Homework23/test/registrationNegativeTest.spec.ts",
+          "line": 135,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Field ' Re-enter Password': verify error message for the 'Re-enter Password' field",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-40442c12aa97d1f58b0e",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "Field ' Re-enter Password': verify wrong data error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d042bf094b02d9c68d2b-1939be76f022b1e75ced",
+              "file": "Homework23/test/registrationNegativeTest.spec.ts",
+              "line": 144,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Homework23/test/registrationPositiveTest.spec.ts",
+      "file": "Homework23/test/registrationPositiveTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify user can be registered",
+          "file": "Homework23/test/registrationPositiveTest.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify user can be registered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3b9c19d0e4e97c9f7f65-a504c9cab688c5492520",
+              "file": "Homework23/test/registrationPositiveTest.spec.ts",
+              "line": 15,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Homework27/tests/garageTest.spec.ts",
+      "file": "Homework27/tests/garageTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verify user can be registered",
+          "file": "Homework27/tests/garageTest.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify a car can be added ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a96e67b835abec790e7d-d0550e7a72aefb5c7e32",
+              "file": "Homework27/tests/garageTest.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Homework28/task1.spec.ts",
+      "file": "Homework28/task1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mock user\"s profile",
+          "file": "Homework28/task1.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify user\"s profile replacement",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51f3ec16bd6c314f3d5a-1eecc40c4c77126b9d6c",
+              "file": "Homework28/task1.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Homework28/task2.spec.ts",
+      "file": "Homework28/task2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API",
+          "file": "Homework28/task2.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Verify a car can be added ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be9b9faa71a9fc07d9f3-b83c2fc21b95b5ccfc58",
+              "file": "Homework28/task2.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "Verify invalid brand ID error message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be9b9faa71a9fc07d9f3-59e300df422c7c5df2f3",
+              "file": "Homework28/task2.spec.ts",
+              "line": 40,
+              "column": 9
+            },
+            {
+              "title": "Verify null mileage error message ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "be9b9faa71a9fc07d9f3-9ed0c6cbb3db371f75c2",
+              "file": "Homework28/task2.spec.ts",
+              "line": 62,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-11-15T05:51:29.487Z",
+    "duration": 8628.521999999999,
+    "expected": 2,
+    "skipped": 22,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
